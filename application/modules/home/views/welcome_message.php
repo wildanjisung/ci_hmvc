@@ -1,89 +1,123 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
 
-	<style type="text/css">
+    <!-- Title Page-->
+    <title>Title </title>
+    <title><?php echo base_url('assets/stylesheet.css'); ?></title>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+    <!-- Fontfaces CSS-->
+    <link href="<?php echo base_url('assets/theme/css/font-face.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/font-awesome-4.7/css/font-awesome.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/font-awesome-5/css/fontawesome-all.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/mdi-font/css/material-design-iconic-font.min.css')?>" rel="stylesheet" media="all">
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="<?php echo base_url('assets/theme/vendor/bootstrap-4.1/bootstrap.min.css')?>">
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+    <!-- Vendor CSS-->
+    <link href="<?php echo base_url('assets/theme/vendor/animsition/animsition.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/wow/animate.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/css-hamburgers/hamburgers.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/slick/slick.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/select2/select2.min.css')?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/theme/vendor/perfect-scrollbar/perfect-scrollbar.css')?>" rel="stylesheet" media="all">
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+    <!-- Main CSS-->
+    <link href="<?php echo base_url('assets/theme/css/theme.css')?>" rel="stylesheet" media="all">
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
 </head>
-<body>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+<body class="animsition">
+    <div class="page-wrapper">
+        <div class="page-content--bge5">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login-content">
+                        <div class="login-logo">
+                            <a href="#">
+                                <img src="<?php echo base_url('assets/theme/images/icon/logo.png')?>" alt="CoolAdmin">
+                            </a>
+                        </div>
+                        <div class="login-form">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="login-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember">Remember Me
+                                    </label>
+                                    <label>
+                                        <a href="#">Forgotten Password?</a>
+                                    </label>
+                                </div>
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+                                <div class="social-login-content">
+                                    <div class="social-button">
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">sign in with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">sign in with twitter</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="register-link">
+                                <p>
+                                    Don't you have account?
+                                    <a href="#">Sign Up Here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+    </div>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+    <!-- Jquery JS-->
+    <script src="<?php echo base_url('assets/theme/vendor/jquery-3.2.1.min.js')?>"></script>
+    <!-- Bootstrap JS-->
+    <script src="<?php echo base_url('assets/theme/vendor/bootstrap-4.1/popper.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/bootstrap-4.1/bootstrap.min.js')?>"></script>
+    <!-- Vendor JS       -->
+    <script src="<?php echo base_url('assets/theme/vendor/slick/slick.min.js')?>">
+    </script>
+    <script src="<?php echo base_url('assets/theme/vendor/wow/wow.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/animsition/animsition.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')?>">
+    </script>
+    <script src="<?php echo base_url('assets/theme/vendor/counter-up/jquery.waypoints.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/counter-up/jquery.counterup.min.js')?>">
+    </script>
+    <script src="<?php echo base_url('assets/theme/vendor/circle-progress/circle-progress.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/perfect-scrollbar/perfect-scrollbar.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/chartjs/Chart.bundle.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/theme/vendor/select2/select2.min.js')?>">
+    </script>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
+    <!-- Main JS-->
+    <script src="<?php echo base_url('assets/theme/js/main.js')?>"></script>
 
 </body>
+
 </html>
+<!-- end document-->
